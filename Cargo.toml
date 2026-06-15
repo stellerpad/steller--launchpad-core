@@ -1,0 +1,12 @@
+[workspace]
+members = [
+    "crates/cli",
+    "crates/client", 
+    "contracts/token",
+    "contracts/vesting",
+    "contracts/airdrop",
+    "contracts/launchpad"
+]
+
+[workspace.dependencies]
+soroban-sdk = "21.0.0"
