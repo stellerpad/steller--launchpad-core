@@ -1,0 +1,18 @@
+# Clippy configuration for Stellar Launchpad Core
+# Ensures consistent linting across the workspace
+
+# Allow some Clippy warnings that are common in Soroban contracts
+avoid-breaking-exported-api = false
+msrv = "1.70.0"
+
+# Disallowed types for better code quality
+disallowed-types = [
+    "std::collections::HashMap", # Use soroban_sdk::Map instead
+    "std::collections::BTreeMap", # Use soroban_sdk::Map instead  
+    "std::vec::Vec", # Use soroban_sdk::Vec instead
+]
+
+# Enforce specific patterns
+too-many-arguments-threshold = 5
+type-complexity-threshold = 60
+single-char-lifetime-names-threshold = 2
