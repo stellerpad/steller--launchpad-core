@@ -2,6 +2,8 @@
 
 use soroban_sdk::{contract, contracttype, contractimpl, log, Env, Address, Vec};
 
+const DAY_IN_LEDGERS: u32 = 17280; // Approximately 24 hours worth of ledgers
+
 #[derive(Clone, Debug, PartialEq)]
 #[contracttype]
 pub enum VestingType {
