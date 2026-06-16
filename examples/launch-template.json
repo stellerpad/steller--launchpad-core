@@ -1,0 +1,31 @@
+{
+  "name": "MyToken",
+  "symbol": "MTK",
+  "decimals": 7,
+  "total_supply": 1000000,
+  "description": "A revolutionary token for the future",
+  "website": "https://mytoken.org",
+  "mintable": true,
+  "pausable": true,
+  "vesting": {
+    "enabled": true,
+    "schedules": [
+      {
+        "beneficiary": "TEAM_ADDRESS_HERE",
+        "amount": 200000,
+        "vesting_type": "hybrid",
+        "cliff_days": 365,
+        "vest_days": 1460,
+        "cliff_amount": 50000,
+        "revocable": true
+      }
+    ]
+  },
+  "airdrop": {
+    "enabled": true,
+    "type": "claimable",
+    "total_amount": 100000,
+    "duration_days": 90,
+    "recipients_file": "examples/recipients.csv"
+  }
+}
