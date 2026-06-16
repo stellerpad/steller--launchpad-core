@@ -1,0 +1,31 @@
+# Stellar Launchpad Configuration Example
+
+[network]
+# Network to use (testnet, mainnet)
+default = "testnet"
+
+[testnet]
+rpc_url = "https://soroban-testnet.stellar.org:443"
+network_passphrase = "Test SDF Network ; September 2015"
+
+[mainnet]
+rpc_url = "https://soroban-mainnet.stellar.org:443"
+network_passphrase = "Public Global Stellar Network ; September 2015"
+
+[contracts]
+# Deployed contract addresses (will be populated after deployment)
+token = ""
+vesting = ""
+airdrop = ""
+launchpad = ""
+
+[accounts]
+# Account configuration
+admin = ""
+source_account = ""
+
+[cli]
+# CLI-specific settings
+verbose = false
+dry_run = false
+auto_confirm = false
