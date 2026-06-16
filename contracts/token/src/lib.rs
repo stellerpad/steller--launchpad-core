@@ -365,7 +365,7 @@ impl TokenContract {
 #[cfg(test)]
 mod tests {
     use super::*;
-    use soroban_sdk::{testutils::{Address as _, Ledger}, Env};
+    use soroban_sdk::{testutils::Address as _, Env};
 
     // Import the generated client
     use crate::{TokenContract, TokenContractClient};
