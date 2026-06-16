@@ -1,0 +1,10 @@
+{
+  "name": "MyToken",
+  "symbol": "MTK",
+  "decimals": 7,
+  "total_supply": 1000000,
+  "mintable": false,
+  "burnable": false,
+  "description": "",
+  "website": ""
+}
