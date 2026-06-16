@@ -232,10 +232,44 @@ cd contracts/launchpad && cargo test
 - **No todo!() Macros**: All functionality fully implemented
 - **Comprehensive Testing**: Extensive test coverage including security scenarios
 
-## 🌐 Network Support
+## 🌐 Stellar Integration
 
+This project integrates deeply with the Stellar network and its ecosystem:
+
+- **Soroban Smart Contracts**: All contracts are written for Stellar's Soroban VM and compiled to WASM
+- **Stellar Asset Contract (SAC)**: Tokens are SAC-compatible, enabling native interoperability with the Stellar DEX, Horizon, and wallets
+- **Stellar SDK**: Uses `soroban-sdk` for contract development and `stellar-sdk` in the CLI for transaction building and submission
+- **Stellar CLI**: Contract deployment and invocation via the official `stellar` CLI tool
+- **Horizon API**: Launch status and account queries are routed through the Horizon REST API
+- **Friendbot / Testnet**: Funded test accounts via Stellar's Friendbot for fast local development
 - **Testnet**: Fully deployed and tested
 - **Mainnet**: Ready for production deployment
+
+### Stellar Network Architecture
+
+```
+┌─────────────────────────────────────────────┐
+│              stellar-launchpad CLI           │
+│         (Transaction builder & signer)       │
+└──────────┬──────────────────────┬────────────┘
+           │                      │
+    ┌──────▼──────┐        ┌──────▼──────┐
+    │ Horizon API │        │ Soroban RPC │
+    │  (queries)  │        │  (invokes)  │
+    └──────┬──────┘        └──────┬──────┘
+           │                      │
+           └──────────┬───────────┘
+                      │
+           ┌──────────▼───────────┐
+           │    Stellar Network   │
+           │  ┌────────────────┐  │
+           │  │ Token Contract │  │
+           │  │ Vesting        │  │
+           │  │ Airdrop        │  │
+           │  │ Launchpad Reg. │  │
+           │  └────────────────┘  │
+           └──────────────────────┘
+```
 
 ## 📚 Documentation
 
