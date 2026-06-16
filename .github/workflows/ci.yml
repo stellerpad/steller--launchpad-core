@@ -1,0 +1,75 @@
+name: CI
+
+on:
+  push:
+    branches: [ main, develop ]
+  pull_request:
+    branches: [ main, develop ]
+
+env:
+  CARGO_TERM_COLOR: always
+
+jobs:
+  test:
+    name: Test
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Install Rust
+      uses: dtolnay/rust-toolchain@stable
+      with:
+        targets: wasm32-unknown-unknown
+    
+    - name: Cache cargo dependencies
+      uses: actions/cache@v4
+      with:
+        path: |
+          ~/.cargo/bin/
+          ~/.cargo/registry/index/
+          ~/.cargo/registry/cache/
+          ~/.cargo/git/db/
+          target/
+        key: ${{ runner.os }}-cargo-${{ hashFiles('**/Cargo.lock') }}
+    
+    - name: Install Stellar CLI
+      run: |
+        curl -sL https://stellar.github.io/stellar-cli/install.sh | bash
+        echo "$HOME/.local/bin" >> $GITHUB_PATH
+    
+    - name: Run tests
+      run: cargo test --all
+    
+    - name: Check formatting
+      run: cargo fmt --all -- --check
+    
+    - name: Run clippy
+      run: cargo clippy --all-targets --all-features -- -D warnings
+    
+    - name: Build contracts for WASM
+      run: |
+        cd contracts/token && stellar contract build
+        cd ../vesting && stellar contract build  
+        cd ../airdrop && stellar contract build
+        cd ../launchpad && stellar contract build
+
+  build-cli:
+    name: Build CLI
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v4
+    
+    - name: Install Rust
+      uses: dtolnay/rust-toolchain@stable
+    
+    - name: Build CLI
+      run: |
+        cd crates/cli
+        cargo build --release
+    
+    - name: Test CLI
+      run: |
+        cd crates/cli
+        cargo test
