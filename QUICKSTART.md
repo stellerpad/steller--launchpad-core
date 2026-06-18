@@ -10,7 +10,7 @@ Get up and running with Stellar Launchpad Core in 5 minutes!
 ## 1. Clone and Setup
 
 ```bash
-git clone https://github.com/your-org/stellar-launchpad-core.git
+git clone https://github.com/stellerpad/stellar-launchpad-core.git
 cd stellar-launchpad-core
 
 # Run automated setup
@@ -83,4 +83,4 @@ cargo build --release
 - Check out [example configurations](examples/)
 - Join our [Discord community](https://discord.gg/stellar-dev)
 
-Need help? Open an [issue](https://github.com/your-org/stellar-launchpad-core/issues) or check our [troubleshooting guide](docs/TROUBLESHOOTING.md).
+Need help? Open an [issue](https://github.com/stellerpad/stellar-launchpad-core/issues) or check our [troubleshooting guide](docs/TROUBLESHOOTING.md).

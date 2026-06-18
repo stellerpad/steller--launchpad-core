@@ -47,6 +47,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Changed
+- Removed target/ from version control, fixed sister-repo links, verified license.
+
 ### Planned
 - Web dashboard integration
 - Advanced analytics and reporting

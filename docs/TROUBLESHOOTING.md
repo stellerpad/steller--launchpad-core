@@ -201,7 +201,7 @@ stellar transaction inspect <TRANSACTION_ID> --network testnet
 
 ### Check Common Issues
 1. Review [FAQ](FAQ.md)
-2. Check [GitHub Issues](https://github.com/your-org/stellar-launchpad-core/issues)
+2. Check [GitHub Issues](https://github.com/stellerpad/stellar-launchpad-core/issues)
 3. Search [Stellar Documentation](https://developers.stellar.org/)
 
 ### Report New Issues
@@ -216,7 +216,7 @@ Include in your issue:
 ### Community Support
 - [Stellar Discord](https://discord.gg/stellar-dev)
 - [Stellar Stack Overflow](https://stackoverflow.com/questions/tagged/stellar)
-- [GitHub Discussions](https://github.com/your-org/stellar-launchpad-core/discussions)
+- [GitHub Discussions](https://github.com/stellerpad/stellar-launchpad-core/discussions)
 
 ## Emergency Procedures
 

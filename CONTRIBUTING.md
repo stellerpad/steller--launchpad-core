@@ -427,8 +427,8 @@ Before submitting a PR, ensure:
 
 This project is part of a larger ecosystem:
 
-- **Web Dashboard**: [stellar-launchpad-web](https://github.com/<org>/stellar-launchpad-web)
-- **Documentation Site**: [stellar-launchpad-docs](https://github.com/<org>/stellar-launchpad-docs)
+- **Web Dashboard**: [stellar-launchpad-web](https://github.com/stellerpad/stellar-launchpad-web)
+- **Documentation Site**: [stellar-launchpad-docs](https://github.com/stellerpad/stellar-launchpad-docs)
 
 ## Release Process
 

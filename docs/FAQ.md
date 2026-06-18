@@ -63,11 +63,11 @@ Costs depend on Stellar network fees:
 
 ### How do I contribute to the project?
 1. Read the [Contributing Guide](../CONTRIBUTING.md)
-2. Check [open issues](https://github.com/your-org/stellar-launchpad-core/issues)
+2. Check [open issues](https://github.com/stellerpad/stellar-launchpad-core/issues)
 3. Submit a pull request
 
 ### How do I report bugs?
-1. Check existing [issues](https://github.com/your-org/stellar-launchpad-core/issues)
+1. Check existing [issues](https://github.com/stellerpad/stellar-launchpad-core/issues)
 2. Create a new issue with:
    - Steps to reproduce
    - Expected vs actual behavior
@@ -139,4 +139,4 @@ Yes! The contracts expose all necessary functions. You'll need:
 - Add the wasm32 target: `rustup target add wasm32-unknown-unknown`
 - Clear target directory: `cargo clean`
 
-Still have questions? Join our [Discord](https://discord.gg/stellar-dev) or open an [issue](https://github.com/your-org/stellar-launchpad-core/issues)!
+Still have questions? Join our [Discord](https://discord.gg/stellar-dev) or open an [issue](https://github.com/stellerpad/stellar-launchpad-core/issues)!

@@ -89,7 +89,7 @@ stellar-launchpad deploy --contract token --network testnet
 
 ```bash
 # Clone the repository
-git clone https://github.com/<your-org>/stellar-launchpad-core.git
+git clone https://github.com/stellerpad/stellar-launchpad-core.git
 cd stellar-launchpad-core
 
 # Build all contracts and CLI
@@ -295,8 +295,8 @@ Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on:
 
 This project is part of a larger ecosystem:
 
-- **[Web Dashboard](https://github.com/<your-org>/stellar-launchpad-web)**: React-based user interface
-- **[Documentation Site](https://github.com/<your-org>/stellar-launchpad-docs)**: Comprehensive user guides
+- **[Web Dashboard](https://github.com/stellerpad/stellar-launchpad-web)**: React-based user interface
+- **[Documentation Site](https://github.com/stellerpad/stellar-launchpad-docs)**: Comprehensive user guides
 
 ## 📄 License
 
@@ -317,8 +317,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 💡 Support
 
-- **Issues**: [GitHub Issues](https://github.com/<your-org>/stellar-launchpad-core/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/<your-org>/stellar-launchpad-core/discussions)
+- **Issues**: [GitHub Issues](https://github.com/stellerpad/stellar-launchpad-core/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/stellerpad/stellar-launchpad-core/discussions)
 - **Discord**: Join the Stellar developer community
 
 ---
